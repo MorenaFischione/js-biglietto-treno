@@ -39,7 +39,7 @@ if (età < 18) {
 
     //arrotondiamo a 2 decimali
     costoBigliettoScontatoVentiPerc = costoBigliettoScontatoVentiPerc.toFixed(2);
-    document.getElementById ("costo-biglietto").innerHTML = "Il costo del tuo bigliotto sarà:" + costoBigliettoScontatoVentiPerc + " \u20AC ";
+    document.getElementById ("costo-biglietto").innerHTML = "Il costo del tuo bigliotto sarà scontato:" + costoBigliettoScontatoVentiPerc + " \u20AC ";
 } else if (età > 65) {
     //Calcoliamo la nostra percentuale sconto al 40 percento in base al prezzoBiglietto
     let valoreScontoQuarantaPerc = (prezzoBiglietto * 40) / 100;
@@ -51,7 +51,7 @@ if (età < 18) {
 
     //arrotondiamo a 2 decimali
     costoBigliettoScontatoQuarantaPerc = costoBigliettoScontatoQuarantaPerc.toFixed(2);
-    document.getElementById ("costo-biglietto").innerHTML = "Il costo del tuo bigliotto sarà:" + costoBigliettoScontatoQuarantaPerc + " \u20AC ";
+    document.getElementById ("costo-biglietto").innerHTML = "Il costo del tuo bigliotto sarà scontato:" + costoBigliettoScontatoQuarantaPerc + " \u20AC ";
 } else {
     prezzoBiglietto;
     document.getElementById ("costo-biglietto").innerHTML = "Il costo del tuo bigliotto sarà:" + prezzoBiglietto + " \u20AC ";
